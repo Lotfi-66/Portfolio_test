@@ -1,0 +1,209 @@
+/* App.css */
+@font-face {
+    font-family: 'Futurama';
+    src: url('fonts/Futurama\ bold.ttf') format('truetype');
+}
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Futurama', sans-serif;
+    color: #ffffff;
+    background-color: transparent;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+.App {
+    text-align: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    position: relative;
+    z-index: 1;
+}
+
+.App-header {
+    margin-bottom: 40px;
+    z-index: 2;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #cccccc;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ffffff;
+    padding-bottom: 10px;
+}
+
+.main-content {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    z-index: 2;
+}
+
+.left-column {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    position: absolute;
+    left: 15px;
+}
+
+.right-column {
+    width: 35%;
+    position: fixed;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    max-height: 80vh;
+    overflow-y: auto;
+}
+
+.left-section,
+.bottom-section,
+.right-section {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+
+.contact-form div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.contact-form label {
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.contact-form button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4da6ff;
+    color: #ffffff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    align-self: flex-start;
+}
+
+.contact-form button:hover {
+    background-color: #66b3ff;
+}
+
+.skills {
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+    font-size: 2rem;
+    margin-top: 20px;
+}
+
+.social-links {
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.social-links a {
+    display: flex;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.social-links a svg {
+    margin-right: 5px;
+}
+
+@media (max-width: 768px) {
+    .main-content {
+        flex-direction: column;
+    }
+
+    .left-column,
+    .right-column {
+        width: 100%;
+        position: static;
+        transform: none;
+    }
+
+    .right-column {
+        margin-top: 40px;
+        max-height: none;
+        overflow-y: visible;
+    }
+}
+
+.tech-sphere-container {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    margin: 0 auto;
+}
+
+.tech-sphere {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.tech-sphere .icon {
+    position: absolute;
+    font-size: 24px;
+    transition: transform 0.1s ease-out;
+    color: #fff;
+    text-shadow: 0 0 5px rgba(0,0,0,0.5);
+}
+
