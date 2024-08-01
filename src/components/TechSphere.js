@@ -1,7 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import { FaReact, FaJs, FaPhp, FaBootstrap, FaGithub, FaFigma, FaLinux } from 'react-icons/fa';
 import * as THREE from 'three';
-import Sun from './Sun';
 
 const TechSphere = () => {
     const containerRef = useRef(null);
@@ -169,13 +168,9 @@ const TechSphere = () => {
                 height: '100%',
                 overflow: 'visible'
             }}>
-                <canvas id="moon-canvas" style={{ position: 'absolute', top: '0', left: '0', width: '100%', height: '100%' }}></canvas>
+                <canvas id="moon-canvas" style={{ position: 'absolute', top: '0', left: '0', width: '100%', height: '100%' }}></canvas> 
             </div>
-            <div style={{ position: 'fixed', top: '-150px', right: '400px', width: '150px', height: '150px' }}>
-                <Sun />
-            </div>
-        </div>
-    );
+        </div>);
 };
 
 export default TechSphere;

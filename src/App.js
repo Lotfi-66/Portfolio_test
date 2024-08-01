@@ -3,7 +3,6 @@ import StarryBackground from './StarryBackground';
 import TechSphere from './components/TechSphere';
 import VaisseauSpatial from './VaisseauSpatial';
 import './App.css';
-import Sun from './components/Sun';
 
 function App() {
     const handleVaisseauClick = () => {
